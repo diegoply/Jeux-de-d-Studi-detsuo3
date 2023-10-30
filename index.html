@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+   
+    <title>Jeu de dé</title>
+</head>
+<body class="container  d-flex justify-content-around">
+    <div class="row newGameLargeur">
+    <header class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center me-5">
+                <h1 class="marginDice">Dice Game</h1>
+            </div>
+        </div>
+        <div class="row ">
+             <div class="col-12 d-flex justify-content-center mb_5">
+                <h1  class="d-flex align-items-center justify-content-center blockWin winner"></h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                
+                <button id="buttonStart" type="button" class="btn btn-light buttonStartGame me-4">start game</button>
+            </div>
+        </div>
+   
+            
+        </div>
+    </header>
+
+    <main class="container">
+       <div class="row ">
+        
+            <div class="row ">
+            <section class="col-4 ">
+                <div class="row">
+                    <div class="col-6">
+                <h2 class="text-center me-5">Player 1</h2>
+                </div>
+                <div class="col-6">
+                <p class="playButton"></p>
+            </div>
+            </div>
+                <div>
+                   <h3 class="text-center me-5">score</h3>
+                   <div id="scorePlayer1" class=" d-flex align-items-center justify-content-center fs-1 ms-4" >
+
+                   </div>
+                </div>
+                <div>
+                    <h3 class="text-center me-5">Current</h3>
+                    <div id="currentPlayer1" class=" d-flex align-items-center justify-content-center fs-1 ms-4">
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="col-4 ">
+                <div class="sizeImage">
+                    <div id="imageDés" class=" d-flex align-items-center justify-content-center me-5"  ></div>
+                </div>
+                <button id="lancerDés"   type="button" class="btn btn-light buttonSize mt-5 d-flex align-items-center justify-content-center ms-4" >roll Dice</button>
+                <button  type="button" class="btn btn-light buttonSize mt-5 d-flex align-items-center justify-content-center ms-4 buttonHold" >Hold</button>
+           
+            </section>
+
+            <section class="col-4 ">
+                <div class="row">
+                    <div class="col-6">
+                <h2 class="text-center me-5">Player 2</h2>
+                </div>
+                <div class="col-6">
+                <p class="playButton2"></p>
+            </div>
+                <div>
+                   <h3 class="text-center me-5 ">score</h3>
+                   <div id="scorePlayer2" class=" d-flex align-items-center justify-content-center fs-1 ms-4" >
+
+                   </div>
+                </div>
+                <div>
+                    <h3 class="text-center  me-5">Current</h3>
+                    <div id="currentPlayer2" class=" d-flex align-items-center justify-content-center fs-1 ms-4">
+
+                    </div>
+                </div>
+
+           
+       </div>
+    </section>
+    </div>
+       </div>
+    </main>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
